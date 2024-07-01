@@ -6,11 +6,12 @@ body {
 }
 
 .content {
-    padding: 20px;
+    padding: 14px;
+    font-size: 22px;
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #000;
     overflow: hidden;
 }
 
@@ -21,6 +22,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 26px;
 }
 
 .topnav a:hover {
@@ -29,7 +31,7 @@ body {
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #002fff;
     color: white;
 }
 
@@ -37,16 +39,20 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
+@media screen and (max-width: 800px) {
+    .topnav a:not(.active) {
+        display: none;
+    }
     .topnav a.icon {
         float: right;
         display: block;
     }
 }
 
-@media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+@media screen and (max-width: 800px) {
+    .topnav.responsive {
+        position: relative;
+    }
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -70,7 +76,6 @@ p {
     line-height: 1.6;
 }
 
-/* Add background video style */
 .video-background {
     position: fixed;
     right: 0;
@@ -87,7 +92,6 @@ p {
     }
 }
 
-/* Additional custom styles */
 .box {
     border: 2px solid #333;
     padding: 20px;
