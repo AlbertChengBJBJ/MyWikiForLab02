@@ -81,63 +81,57 @@ p {
     right: 0;
     bottom: 0;
     min-width: 100%;
-    min-height:Let's finalize the updated project to ensure everything is correct. Please follow these detailed instructions to update your files:
+    min-height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
 
-1. **Replace Content in Your Project Files**
+@media screen and (max-width: 600px) {
+    .video-background {
+        display: none;
+    }
+}
 
-    Replace the contents of your existing HTML files with the provided code.
+.box {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e9e9e9;
+}
 
-2. **Ensure Files Are Correctly Named and Located**
+.table-custom {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
 
-    Make sure you have the following files in your project directory:
-    - `index.html`
-    - `section1.html`
-    - `section2.html`
-    - `section3.html`
-    - `references.html`
-    - `css/main.css`
-    - `js/main.js`
+.table-custom th, .table-custom td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
 
-3. **Commit and Push Changes to GitHub**
+.table-custom th {
+    background-color: #04AA6D;
+    color: white;
+}
 
-    Open your terminal and navigate to your project directory. Use the following commands to commit and push your changes:
+.img-rounded {
+    border-radius: 8px;
+}
 
-    ```bash
-    git add .
-    git commit -m "Update project files with new content and styles"
-    git push origin main
-    ```
+/* Zebra-striped table */
+#zebra-table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-### Updated Files
+#zebra-table th, #zebra-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
 
-### 1. `index.html`
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Lab 1 Wiki Page</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-    <div class="topnav" id="myTopnav">
-        <a class="active" href="index.html">Home</a>
-        <a href="section1.html">Where I've Studied</a>
-        <a href="section2.html">This Summer</a>
-        <a href="section3.html">Things I Love About Seattle</a>
-        <a href="references.html">References</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <video autoplay muted loop class="video-background">
-        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-    </video>
-    <div class="content">
-        <h1>This is My Wiki for Lab 1</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/20200110_Hall_of_Supreme_Harmony_courtyard-1.jpg/800px-20200110_Hall_of_Supreme_Harmony_courtyard-1.jpg" alt="where I'm from" class="img-rounded">
-        <p>This is my example intro for Lab 1. My name is Houran Cheng, but I go by Albert too. I'm from Beijing. I'm a junior here at UW and I'm excited to learn more Web-based GIS skills. <a href="https://en.wikipedia.org/wiki/Beijing">this is Beijing</a></p>
-    </div>
-    <script src="js/main.js"></script>
-</body>
-</html>
+#zebra-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
